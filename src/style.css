@@ -200,12 +200,12 @@ button[type="button"]:disabled {
 
 .chat-input-container {
   display: flex;
-  gap: 0.5rem;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .chat-input {
-  flex: 1;
+  width: 100%;
   padding: 1rem;
   font-size: 1.1rem;
   font-family: inherit;
@@ -213,7 +213,7 @@ button[type="button"]:disabled {
   border-radius: 4px;
   background-color: #ffffff;
   color: #1a1a1a;
-  min-height: 80px;
+  min-height: 100px;
   line-height: 1.6;
   resize: vertical;
 }
@@ -224,7 +224,8 @@ button[type="button"]:disabled {
 }
 
 .send-btn {
-  padding: 0.75rem 1.5rem;
+  width: 100%;
+  padding: 0.875rem;
   font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
@@ -233,7 +234,6 @@ button[type="button"]:disabled {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s;
-  white-space: nowrap;
 }
 
 .send-btn:hover:not(:disabled) {
